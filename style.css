@@ -1,0 +1,35 @@
+/*
+Theme Name:test6
+Author:a.m
+*/
+
+body {
+  background: url(images/background.jpg) ;
+  background-attachment: fixed;
+}
+
+#logo04 {
+  width: 100%;
+}
+
+#top-view01 {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+#test {
+  position: absolute;
+  left: calc((100vw - 390px)/2 + 390px + 5.29vw);
+}
+
+.container {
+  background: #fff;
+  box-shadow: 0 0 30px 3px rgba(110,90,70,.7);
+  padding: 2rem;
+  max-width: 390px;
+  margin: auto;
+}
+
+p {
+  font-family: 'Noto Sans JP', sans-serif;
+}
