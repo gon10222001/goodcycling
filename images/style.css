@@ -1,0 +1,197 @@
+/*
+Theme Name:GoodCycling
+Author:a.m
+*/
+
+html {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 62.5%
+}
+
+body {
+  background: url(images/background02.jpg) ;
+  background-attachment: fixed;
+  background-color: rgba(0, 255, 255, 0.562);
+}
+
+#logo04 {
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+#top-view01 {
+  margin-top: 1rem;
+  width: 100%;
+/*  box-shadow: 0 0 30px 3px rgba(111, 103, 96, 0.7); */
+}
+
+#main-container {
+  background: #fff;
+  box-shadow: 0 0 30px 3px rgba(111, 103, 96, 0.7);
+  padding: 2rem;
+  max-width: 390px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+.h2-title {
+  padding: 2rem;
+  background: linear-gradient(to right, #362ae0 0%,#3b79cc 50%,#42d3ed 100%);
+  height: 3rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+  letter-spacing: 2rem;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+#concept {
+  font-family: "Kiwi Maru", serif;
+  font-weight: 1000;
+  font-style: normal;
+  font-size: 1.6rem;
+
+  background-color: #fff; /* 背景色 */
+  background-image: linear-gradient(90deg, transparent 0%, transparent 50%, #fff 50%, #fff 100%), /* 点線1の色 */
+                    linear-gradient(180deg, #ccc 1px, transparent 1px); /* 点線2の色と太さ */
+  background-size: 8px 100%, /* 点線1のサイズ */
+                   100% 2.5em; /* 点線2のサイズ */
+  line-height: 2.5em; /* 文字の高さ */
+  padding-bottom: 1px; /* 最終行の下にも罫線を引く */
+
+}
+
+#div-concept01 {
+  position: relative;
+}
+#div-concept02 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center
+}
+
+#concept02-pic {
+  width: 100%;
+  /* margin: 0 auto; */
+  text-align: center;
+  opacity: 20%;
+}
+
+.div-button {
+  margin: 5rem auto;
+  text-align: center;
+}
+
+.button01 {
+  background-color: #f9c906;
+  background: linear-gradient(to right, #e23122 0%,#ee8332 50%,#f3ac3c 100%);
+  color: #fff;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 2.0rem;
+  border-radius: 20px;
+}
+.button01:hover {
+  color: #fff;
+  opacity: 0.8;
+}
+
+/* .list-use ol li { */
+li {
+  font-size: 1.6rem;
+  /* padding: 10px 0; */
+  /* margin-left: 1rem; */
+}
+
+.li-title {
+  font-weight: bold;
+  background: linear-gradient(transparent 70%, hsl(182, 88%, 74%) 70%);
+}
+
+.use-div {
+  width: 100%;
+  max-height: 15rem;
+  background-color: #3b79cc;
+  margin: 0 auto;
+  /* transform:translate(-50%,0); */
+}
+
+.use-pic {
+  width: 100%;
+  max-height: 15rem;
+  object-fit: none;
+}
+
+.accordion {
+  margin: 1em auto;
+  max-width: 60vw;
+  font-size: 1.6rem;
+  }
+  .toggle {
+  display: none;
+  }
+  .option {
+  position: relative;
+  margin-bottom: 1em;
+  }
+  .title,
+  .content {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: all 0.3s;
+  }
+  .title {
+  border: solid 1px #ccc;
+  padding: 1em;
+  display: block;
+  color: #333;
+  font-weight: bold;
+  }
+  .title::after,
+  .title::before {
+  content: "";
+  position: absolute;
+  right: 1.25em;
+  top: 1.25em;
+  width: 2px;
+  height: 0.75em;
+  background-color: #999;
+  transition: all 0.3s;
+  }
+  .title::after {
+  transform: rotate(90deg);
+  }
+  .content {
+  max-height: 0;
+  overflow: hidden;
+  }
+  .content p {
+  margin: 0;
+  padding: 0.5em 1em 1em;
+  font-size: 0.9em;
+  line-height: 1.5;
+  }
+  .toggle:checked + .title + .content {
+  max-height: 500px;
+  transition: all 1.5s;
+  }
+  .toggle:checked + .title::before {
+  transform: rotate(90deg) !important;
+  }
